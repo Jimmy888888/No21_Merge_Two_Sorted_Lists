@@ -11,6 +11,9 @@ function ListNode(val, next) {
  * @return {ListNode}
  */
  var mergeTwoLists = function(list1, list2) {
+    if(list1 === null) return list2;
+    if(list2 === null) return list1;
+    
     let ans_list = new ListNode;
     let head_list = ans_list;
     
